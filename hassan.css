@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    color: aliceblue;
+   
+}
+h1{
+    color: rgb(255, 255, 255);
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+p{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+/* Style for rounded buttons with animation */
+/* Style for the parent container */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    height: 100vh;          /* Full viewport height */
+    background-color: #f0f8ff; /* Optional background color */
+}
+
+/* Style for the button */
+button {
+    background-color: #161616;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #72a0f5;
+    transform: scale(1.1);
+}
+
+
+
+    /* Normal link styling */
+a {
+    color: #ffffff; /* Green text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Change color on hover */
+a:hover {
+    color: #72a0f5; /* Darker green */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Visited link styling */
+a:visited {
+    color: #6d6c6e; /* Purple for visited links */
+}
+
+/* Active link styling */
+a:active {
+    color: #FF5722; /* Orange when clicking */
+}
+/* Base link styles */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative; /* For underline animation */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Add animated underline */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Position the underline */
+    left: 0;
+    width: 0; /* Initially hidden */
+    height: 2px;
+    background-color: #e5e3ee;
+    transition: width 0.6s ease; /* Smooth animation */
+}
+
+/* Hover effect */
+a:hover {
+    color: #72a0f5; /* Change color */
+}
+
+a:hover::after {
+    width: 100%; /* Expand underline */
+}
+
+   
